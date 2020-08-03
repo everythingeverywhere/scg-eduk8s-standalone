@@ -1,5 +1,6 @@
-# local-eduk8s
-You can use the bash scripts in the local-eduk8s repo to install eduk8s locally on minikube.
+# scg-eduk8s-standalone
+
+An [eduk8s](https://docs.eduk8s.io/en/latest/project-details/project-overview.html) workshop on getting started with Spring Cloud Gateway that using [local-eduk8s](https://github.com/everythingeverywhere/local-eduk8s) repo to install eduk8s locally on minikube for testing purposes.
 
 Clone the GitHub repo:
 

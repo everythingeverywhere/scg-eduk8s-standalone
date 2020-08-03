@@ -14,24 +14,12 @@ kubectl apply -k "github.com/eduk8s/eduk8s?ref=master" && \
 # Running locally and you don’t have a custom domain name which maps to the IP for the cluster, you can use a nip.io address
 kubectl set env deployment/eduk8s-operator -n eduk8s INGRESS_DOMAIN=${MINIKUBE_IP}.nip.io && \
 
-# Create Training Session
-
-# To load the definition of the WORKSHOP, run:
-kubectl apply -f https://raw.githubusercontent.com/eduk8s-labs/lab-k8s-fundamentals/master/resources/workshop.yaml && \
-
-
-# Creating the workshop TRAINING PORTAL
-kubectl apply -f https://raw.githubusercontent.com/eduk8s-labs/lab-k8s-fundamentals/master/resources/training-portal.yaml && \
-
-# To create the workshop environment run: 
-kubectl apply -f https://raw.githubusercontent.com/eduk8s-labs/lab-k8s-fundamentals/master/resources/workshop-environment.yaml && \
-
-# **Load container basiscs**
+## Create Training Session ##
 
 # Load the workshop def, change to raw url of your repo to the workshop.yml
-kubectl apply -f https://raw.githubusercontent.com/eduk8s-labs/lab-container-basics/master/resources/workshop.yaml
+kubectl apply -f  https://github.com/everythingeverywhere/lab-spring-gateway/raw/master/resources/workshop.yaml && \
 
 # Deploy a sample tarining portal, change to raw url of your repo training-portal.yaml
-kubectl apply -f https://raw.githubusercontent.com/eduk8s-labs/lab-container-basics/master/resources/training-portal.yaml
 
-    
+kubectl apply -f  https://raw.githubusercontent.com/everythingeverywhere/lab-spring-gateway/master/resources/training-portal.yaml
+
